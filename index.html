@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJS COMPUTE | Official Landing</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">DJS COMPUTE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">The Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-3">Welcome to <span class="text-accent">DJS COMPUTE</span></h1>
+    <p class="lead mb-4">Where ideas meet execution — we build, break, and better the tech around us.</p>
+    <a href="#about" class="btn btn-accent btn-lg">Explore</a>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">About Us</h2>
+        <p class="mb-3">
+          DJS COMPUTE is the official technical committee of Dwarkadas J. Sanghvi College of Engineering.  
+          We design, develop, and deploy solutions that bridge the gap between academic theory and real-world impact.
+        </p>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Open-source initiatives</li>
+          <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Industry-grade projects</li>
+          <li><i class="bi bi-check-circle-fill text-accent me-2"></i> Hackathons & workshops</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="assets/img/hero-bg.jpg" class="img-fluid rounded" alt="Team working">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE TEAM ================= -->
+<section id="team" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">The Team</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card shadow-sm">
+          <img src="assets/img/team/1.jpg" class="card-img-top" alt="Aarav Mehta">
+          <div class="card-body text-center">
+            <h6 class="fw-bold mb-0">Aarav Mehta</h6>
+            <small class="text-muted">Chairperson</small>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card shadow-sm">
+          <img src="assets/img/team/2.jpg" class="card-img-top" alt="Isha Desai">
+          <div class="card-body text-center">
+            <h6 class="fw-bold mb-0">Isha Desai</h6>
+            <small class="text-muted">Technical Lead</small>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card shadow-sm">
+          <img src="assets/img/team/3.jpg" class="card-img-top" alt="Rohan Nair">
+          <div class="card-body text-center">
+            <h6 class="fw-bold mb-0">Rohan Nair</h6>
+            <small class="text-muted">Design Head</small>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="card shadow-sm">
+          <img src="assets/img/team/4.jpg" class="card-img-top" alt="Priya Iyer">
+          <div class="card-body text-center">
+            <h6 class="fw-bold mb-0">Priya Iyer</h6>
+            <small class="text-muted">Outreach Lead</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+    <p class="text-center mb-5">Want to collaborate or sponsor an event? Drop us a message.</p>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" id="message" required></textarea>
+            </div>
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-accent px-4">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-3 bg-dark text-center text-light small">
+  © <span id="year"></span> DJS COMPUTE. All rights reserved.
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
